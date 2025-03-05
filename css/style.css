@@ -478,4 +478,30 @@
     border-radius: 2px;
   }
 
+  .slider-thumb{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 18%;
+    bottom: -5px;
+    cursor: pointer;
+    display: none;
+  }
+  .fake-slider:hover .slider-thumb{
+    display: block;
+  }
+  
+  .player-right{
+    max-width: 200px;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    margin: 0 10px;
+  }
+  .player-right i{
+    margin: 0 10px;
+  }
+  
 
