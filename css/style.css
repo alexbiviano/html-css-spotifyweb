@@ -215,7 +215,7 @@
     font-size: 0.8rem;
     transition: font-size 0.5s linear;
   }
-  .subscribe-banner a:hover{
+  .subscribe-banner a:hover{ 
     font-size: 1.1rem;
   }
   
