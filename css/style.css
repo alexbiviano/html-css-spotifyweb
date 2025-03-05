@@ -382,7 +382,6 @@
     margin: 0 10px;
   }
 
-  /* PLAYER BAR */
 .player {
     background-color: #181818;
     display: flex;
@@ -391,14 +390,13 @@
   
   }
   
-  /* SEZIONE CENTRALE  */
   .player-center {
     display: flex;
     align-items: center;
     gap: 20px; 
   }
   
-  /* GRUPPO CONTROLLI (SHUFFLE, PREV, PLAY, NEXT, REPEAT) */
+  /* GRUPPO CONTROLLI */
   .controls {
     display: flex;
     gap: 10px; 
