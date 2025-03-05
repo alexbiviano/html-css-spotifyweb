@@ -1,63 +1,32 @@
 /* Media query */
-@media screen and (max-height: 400px) {
-    .playlist-menu{
-      display: none;
+@media (max-width: 575.98px) {
+    body {
+      background-color: #f0f0f0;
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
     }
   }
   
-  /* xs media-query */
-  @media screen and (max-width: 768px) {
-    #logo-lg{
-      display: none;
-    }
-    #logo-xs{
-      display: inline-block;
-      width: 30px;
-    }
-    .main-menu span{
-      display: none;
-    }
   
-    .playlist-menu{
-      display: none;
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+      background-color: #e0e0e0;
+      font-size: 16px;
     }
-  
-    .main-menu .pl-20, .main-menu .p-20{
-      padding-left: 0;
-      margin: 8px;
-    }
-    .main-menu{
-      width: 50px;
-    }
-    .subscribe-banner {
-      width: calc(100% - 50px);
-    }
-  
-    .music-section{
-      width: calc(100% - 50px);
+    .container {
+      padding: 15px;
     }
   }
   
 
-  @media screen and (max-width: 560px) {
-    #site-footer{
-      font-size: 0.5rem;
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      background-color: #d0d0d0;
+      font-size: 18px;
     }
-    .player-left{
-      max-width: 100px;
-    }
-    .player-icons i{
-      padding: 0 6px;
-      font-size: 0.5rem;
-    }
-    .player-icons i:nth-child(3){
-      font-size: 1rem;
-    }
-    .player-middle{
-      max-width: 200px;
-    }
-    .player-right{
-      max-width: 100px;
-      margin: 0 2px;
+    .container {
+      padding: 20px;
     }
   }
