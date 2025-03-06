@@ -1,117 +1,83 @@
 /* Media query */
-@media screen and (max-width: 877px) {
-  /* recently played section */
-  .section__content .row {
-      flex-wrap: wrap;
+
+@media (max-width: 575.98px) {
+  
+  #site-content {
+    flex-direction: column;
   }
 
-  .section__content .col {
-      flex-basis: calc(100% / 4);
+  .main-menu,
+  .music-section {
+    width: 100%;
   }
-}
-
-/********************
-**** small screen *****
-*********************/
-@media screen and (max-width: 638px) {
-  /* app music player */
-  /* current track section */
-  .current-track__icons .row {
-      gap: 0;
-      flex-direction: column;
-  } 
-
-  /* recently played section */
-  .section__content .col {
-      flex-basis: 50%;
-  }
-}
-
-/********************
-**** x-small screen *****
-*********************/
-@media screen and (max-width: 551px) {
-  /* layout */
-  .app-nav {
-      width: 50px;
-  }
-
-  /* app music player */
-  /* other options */
-  .progress__volume {
-      width: 0;
-  }
-
-  .app-player .container > .row {
-      gap: 0 20px;
-  }
-
-  .other-option [class^="button"]:not(.button-settings),
-  .other-option .progress__time {
-      display: none;
-  }
-
-  .button-settings {
-      display: block;
-  }
-
  
-  .logo {
-      padding: 10px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  #logo-lg {
+    display: none;
+  }
+  
+ 
+  .albums {
+    flex-direction: column;
+    align-items: center;
+  }
+  .album {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  #site-content {
+    flex-direction: column;
+  }
+  .main-menu,
+  .music-section {
+    width: 100%;
   }
 
-  .logo--big {
-      display: none;
+  #logo-lg {
+    display: none;
   }
+  
 
-  .logo--small {
-      display: block;
-      width: 30px;
+  .albums {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
-
-  .nav__button .button__text {
-      display: none;
+  .album {
+    width: 45%;
+    margin-bottom: 20px;
   }
+}
 
-  .nav__button .button--big i {
-      font-size: 1.5rem;
-      font-weight: 400;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+  #site-content {
+    flex-direction: row;
   }
-
-  .nav__button-home::before {
-      display: none;
-  }
-
-  li:hover .nav__button::before {
-      display: none;
-  }
-
-  .app-nav .container > .row {
-      justify-content: center;
-      align-items: center;
-  }
-
-  /* playlist menu section */
-  .playlist-menu {
-      display: none;
-  }
-
+  
   .main-menu {
-      flex-grow: 1;
+    width: 25%;
   }
-
+  .music-section {
+    width: 75%;
+  }
  
-  .user-menu .nav__button:first-child:after {
-      display: none;
+  #logo-lg {
+    display: block;
+  }
+  #logo-xs {
+    display: none;
   }
 
-
-  /* hover effect */
-  li.nav__button:not(.no-bar):hover:before {
-      left: -5px;
+  .albums {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .album {
+    width: 30%;
+    margin: 1%;
   }
 }
