@@ -1,32 +1,117 @@
 /* Media query */
-@media (max-width: 575.98px) {
-    body {
-      background-color: #f0f0f0;
-      font-size: 14px;
-    }
-    .container {
-      padding: 10px;
-    }
+@media screen and (max-width: 877px) {
+  /* recently played section */
+  .section__content .row {
+      flex-wrap: wrap;
   }
-  
-  
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    body {
-      background-color: #e0e0e0;
-      font-size: 16px;
-    }
-    .container {
-      padding: 15px;
-    }
-  }
-  
 
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    body {
-      background-color: #d0d0d0;
-      font-size: 18px;
-    }
-    .container {
-      padding: 20px;
-    }
+  .section__content .col {
+      flex-basis: calc(100% / 4);
   }
+}
+
+/********************
+**** small screen *****
+*********************/
+@media screen and (max-width: 638px) {
+  /* app music player */
+  /* current track section */
+  .current-track__icons .row {
+      gap: 0;
+      flex-direction: column;
+  } 
+
+  /* recently played section */
+  .section__content .col {
+      flex-basis: 50%;
+  }
+}
+
+/********************
+**** x-small screen *****
+*********************/
+@media screen and (max-width: 551px) {
+  /* layout */
+  .app-nav {
+      width: 50px;
+  }
+
+  /* app music player */
+  /* other options */
+  .progress__volume {
+      width: 0;
+  }
+
+  .app-player .container > .row {
+      gap: 0 20px;
+  }
+
+  .other-option [class^="button"]:not(.button-settings),
+  .other-option .progress__time {
+      display: none;
+  }
+
+  .button-settings {
+      display: block;
+  }
+
+ 
+  .logo {
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .logo--big {
+      display: none;
+  }
+
+  .logo--small {
+      display: block;
+      width: 30px;
+  }
+
+
+  .nav__button .button__text {
+      display: none;
+  }
+
+  .nav__button .button--big i {
+      font-size: 1.5rem;
+      font-weight: 400;
+  }
+
+  .nav__button-home::before {
+      display: none;
+  }
+
+  li:hover .nav__button::before {
+      display: none;
+  }
+
+  .app-nav .container > .row {
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* playlist menu section */
+  .playlist-menu {
+      display: none;
+  }
+
+  .main-menu {
+      flex-grow: 1;
+  }
+
+ 
+  .user-menu .nav__button:first-child:after {
+      display: none;
+  }
+
+
+  /* hover effect */
+  li.nav__button:not(.no-bar):hover:before {
+      left: -5px;
+  }
+}
